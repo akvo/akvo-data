@@ -1,2 +1,2 @@
-# akvo-data
+# akvo-opendata
 Akvo Public Data project
