@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------------------------
+
+            Title:   Akvo CKAN theme
+
+/*---------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------
+
+        Title:          Akvo CKAN library
+        Author:         Loïc Sans, loic@akvo.org
+
+/*---------------------------------------------------------------------------------*/
+                        /* Colours
+---------------------------------------------------------------------------------*/
+/* Akvo Primary Colours:    */
+/* Akvo Purplish Blue */
+/* Akvo very light blue */
+/* Akvo Orange / light Brown */
+/* Akvo Yellow */
+/* Akvo Pink*/
+/* Akvo Red*/
+/* Akvo Mid grey */
+/* Akvo Darker shade Blue from light blue */
+/* Akvo link blue */
+/* Akvo black */
+/* Akvo Secondary Colours:    */
+/* Akvo very Light green */
+/* Akvo red */
+/* Akvo Pink */
+/* Akvo Darker Grey */
+/* Akvo Very dark Green (Military) */
+/* Akvo Kaki (Greenish Brown) */
+/* Akvo Off White */
+/* Akvo darkish blue / Water Point */
+/* Media Queries
+  ========================================================================== */
+/* Placeholder
+  ========================================================================== */
+/* HEADER */
+header.account-masthead {
+  background: #202024; }
+header.navbar {
+  background: #396680; }
+header .nav-pills li a:hover {
+  background-color: #396680; }
+header .nav-pills li.active a {
+  background-color: #396680; }
+
+/* GENERAL TYPOGRAPHY AND STYLING*/
+body {
+  background: #396680;
+  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #3792b3; }
+
+[role=main] {
+  background: #f2f0e6; }
+
+footer.site-footer {
+  background: #2c2a74; }
+
+/* HOMEPAGE */
+.homepage .hero {
+  background: #f2f0e6; }
+.homepage [role=main] {
+  min-height: initial; }
+.homepage .module-search .module-content {
+  background: #396680; }
+.homepage .module-search .tags {
+  background: #202024; }
+.homepage .media-overlay .media-heading {
+  background: #202024; }
+
+/*# sourceMappingURL=main.css.map */

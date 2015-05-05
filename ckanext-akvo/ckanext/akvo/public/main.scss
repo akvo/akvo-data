@@ -1,0 +1,79 @@
+/*---------------------------------------------------------------------------------
+
+            Title:   Akvo CKAN theme
+
+/*---------------------------------------------------------------------------------*/
+
+@import "library.scss";
+
+/* HEADER */
+
+header {
+	&.account-masthead {
+		background: $akvoBlack;
+	}
+
+	&.navbar {
+		background: $primary5;
+	}
+	.nav-pills {
+		li {
+			a:hover {
+				background-color: $primary5;
+			}
+			&.active {
+				a {
+					background-color: $primary5;
+				}
+			}
+		}
+	}
+}
+
+/* GENERAL TYPOGRAPHY AND STYLING*/
+
+body {
+	background: $primary5;
+	font-family: $bodyFont;
+}
+
+a {
+	color: $akvoLink;
+}
+
+[role=main] {
+	background: $secondary8;
+}
+
+footer {
+	&.site-footer {
+		background: $akvoPurple;
+	}
+}
+
+/* HOMEPAGE */
+
+.homepage {
+	.hero {
+		background: $secondary8;
+	}
+	[role=main] {
+		min-height: initial;
+	}
+
+	.module-search {
+		.module-content {
+			background: $primary5;
+		}
+
+		.tags {
+			background: $akvoBlack;
+		}
+	}
+
+	.media-overlay {
+		.media-heading {
+			background: $akvoBlack;
+		}
+	}
+}

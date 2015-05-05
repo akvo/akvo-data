@@ -1,0 +1,8 @@
+# Files to ignore globally
+.DS_Store
+.sass-cache
+dwsync.xml
+*.css.map
+*.scssc
+*.*~
+
