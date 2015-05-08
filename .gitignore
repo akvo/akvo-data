@@ -5,4 +5,4 @@ dwsync.xml
 *.css.map
 *.scssc
 *.*~
-
+vagrant/.vagrant/
