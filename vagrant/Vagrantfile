@@ -1,0 +1,18 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "opendata-dev-20150424"
+  #config.vm.box_url = "http://files.akvo-ops.org/opendata-dev-20150508.box"
+  config.vm.box_url = "/Users/oriol.fito/repos/provisioning/vagrant/boxes/opendata-dev-base/opendata-dev-20150508.box"
+
+  config.vm.synced_folder "../", "/vagrant/akvo-opendata/checkout", 
+    mount_options: ["dmode=755,fmode=644"]
+
+  config.vm.network :private_network, ip: "192.168.50.101"
+
+  config.vm.provision "shell", path: "./provisioning/link_code.sh"
+  config.vm.provision "shell", path: "./provisioning/install_theme_extension.sh"
+  config.vm.provision "shell", path: "./provisioning/reload_appserver.sh"
+
+end
