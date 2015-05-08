@@ -4,10 +4,7 @@
 
 If you have never used Vagrant or the OpenData Vagrant development environment, follow these steps first:
 
-1. Ensure you have at least Vagrant version 1.2 installed:
-    
-       ~$ vagrant --version
-	   vagrant version 1.2.2
+1. Ensure you have at least Vagrant version 1.2 installed: `~$ vagrant --version`
 
    If you don't have Vagrant installed or if you have an old version installed, head over to [http://vagrantup.com](http://vagrantup.com) to get it.
    
@@ -21,7 +18,7 @@ The first time you use the OpenData development environment:
 
 2. Go into the `vagrant` directory and start the Vagrant box: `cd vagrant` then `vagrant up`. The first time will take a long time, as it will first download the base OpenData virtual machine. Once this is done, it will update required packages if any have changed (this operation may take some minutes).
 
-3. Try out [http://opendata.localdev.akvo.org/](http://opendata.localdev.akvo.org/)
+3. Try out [https://opendata.localdev.akvo.org/](https://opendata.localdev.akvo.org/)
 
 4. A CKAN admin user for testing purposes has been created for you with the following credentials: `akvo` & `password`.
 
