@@ -160,9 +160,12 @@ h1, h2, h3, h4, h5, h6 {
       box-shadow: none; }
       .homepage .module.module-search .tags a.tag:hover {
         background-color: #62448B; }
-.homepage .module .module-heading .organsation-heading,
+.homepage .module.group-list .module-heading {
+  padding: 10px; }
+.homepage .module .module-heading .organisation-heading,
 .homepage .module .module-heading .group-heading {
-  background-color: white; }
+  background-color: white;
+  padding: 5px; }
 .homepage .module .dataset-list li .dataset-content h3 a {
   color: #419dc4; }
 
