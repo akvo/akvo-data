@@ -12,64 +12,169 @@
 /*---------------------------------------------------------------------------------*/
                         /* Colours
 ---------------------------------------------------------------------------------*/
-/* Akvo Primary Colours:    */
-/* Akvo Purplish Blue */
-/* Akvo very light blue */
-/* Akvo Orange / light Brown */
-/* Akvo Yellow */
-/* Akvo Pink*/
-/* Akvo Red*/
-/* Akvo Mid grey */
-/* Akvo Darker shade Blue from light blue */
-/* Akvo link blue */
-/* Akvo black */
-/* Akvo Secondary Colours:    */
-/* Akvo very Light green */
-/* Akvo red */
-/* Akvo Pink */
-/* Akvo Darker Grey */
-/* Akvo Very dark Green (Military) */
-/* Akvo Kaki (Greenish Brown) */
-/* Akvo Off White */
-/* Akvo darkish blue / Water Point */
+/* OpenData Colors */
 /* Media Queries
   ========================================================================== */
 /* Placeholder
   ========================================================================== */
 /* HEADER */
 header.account-masthead {
-  background: #202024; }
-header.navbar {
-  background: #396680; }
-header .nav-pills li a:hover {
-  background-color: #396680; }
-header .nav-pills li.active a {
-  background-color: #396680; }
+  background: #f4f3f8;
+  border-bottom: 1px solid #D9E1E4; }
+  header.account-masthead .container li {
+    border: none; }
+    header.account-masthead .container li a {
+      color: #419dc4;
+      -moz-border-radius: 4px;
+      -o-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px; }
+      header.account-masthead .container li a:hover {
+        color: white;
+        background-color: #419dc4; }
+header.navbar.masthead {
+  background: #f4f3f8; }
+  header.navbar.masthead .nav-collapse {
+    padding-top: 1.4em; }
+  header.navbar.masthead .nav-pills li a {
+    color: #419dc4;
+    font-weight: bold; }
+  header.navbar.masthead .nav-pills li a:hover {
+    color: white;
+    background-color: #419dc4; }
+  header.navbar.masthead .nav-pills li.active a {
+    color: white;
+    background-color: #419dc4; }
+  header.navbar.masthead #field-sitewide-search {
+    border-color: #D9E1E4;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    header.navbar.masthead #field-sitewide-search:focus {
+      -moz-box-shadow: none;
+      -o-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+header.navbar .header-image {
+  max-width: 150px;
+  padding: 0.75em 0; }
 
 /* GENERAL TYPOGRAPHY AND STYLING*/
 body {
-  background: #396680;
+  background: white;
   font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #3792b3; }
+  color: #419dc4; }
 
-[role=main] {
-  background: #f2f0e6; }
+div[role=main] {
+  background: white; }
 
 footer.site-footer {
-  background: #2c2a74; }
+  background: #2d1a47; }
+  @media only screen and (max-width: 768px) {
+    footer.site-footer .footer-links {
+      padding-left: 1em;
+      padding-right: 1em; } }
+  footer.site-footer .footer-links a {
+    color: #419dc4;
+    font-weight: bold; }
 
 /* HOMEPAGE */
+h1, h2, h3, h4, h5, h6 {
+  color: #202024; }
+
+.box {
+  background-color: #f4f3f8;
+  border: none;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .box.stats {
+    min-height: 180px; }
+  @media only screen and (max-width: 768px) {
+    .box {
+      margin-top: 20px; } }
+
+.module-content.box {
+  margin-top: 20px; }
+
 .homepage .hero {
-  background: #f2f0e6; }
+  background: white; }
 .homepage [role=main] {
   min-height: initial; }
-.homepage .module-search .module-content {
-  background: #396680; }
-.homepage .module-search .tags {
-  background: #202024; }
 .homepage .media-overlay .media-heading {
   background: #202024; }
+.homepage .module.module-search {
+  min-height: 180px;
+  background-color: #f4f3f8;
+  padding: 0px; }
+  .homepage .module.module-search .module-content {
+    background-color: #f4f3f8;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .homepage .module.module-search .module-content .search-input .search {
+      border: none;
+      -moz-box-shadow: none;
+      -o-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  .homepage .module.module-search .tags {
+    background-color: #f4f3f8;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .homepage .module.module-search .tags h3 {
+      padding-top: 0.3em;
+      color: #2d1a47; }
+    .homepage .module.module-search .tags a.tag {
+      color: white;
+      background-color: #2d1a47;
+      border: none;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
+      -moz-border-radius: 0px 100px 100px 0px;
+      -o-border-radius: 0px 100px 100px 0px;
+      -webkit-border-radius: 0px 100px 100px 0px;
+      border-radius: 0px 100px 100px 0px;
+      -moz-box-shadow: none;
+      -o-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+      .homepage .module.module-search .tags a.tag:hover {
+        background-color: #62448B; }
+.homepage .module .module-heading .organsation-heading,
+.homepage .module .module-heading .group-heading {
+  background-color: white; }
+.homepage .module .dataset-list li .dataset-content h3 a {
+  color: #419dc4; }
+
+/* ORGANISATIONS */
+.container .wrapper {
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,10 @@
 {% ckan_extends %}
 
 {% block footer_links_ckan %}
-	<li><a href="http://akvo.org">Akvo.org</a></li>
-	<li><a href="http://akvo.org/about-us/">{% trans %} About Akvo {% endtrans %}</a>
-	<li><a href="http://akvo.org/contact-info/">{% trans %} Contact Akvo {% endtrans %}</a></li>
+	<li><a href="http://akvo.org/help/akvo-policies-and-terms-2/akvo-terms-of-use/">{% trans %} Terms of use {% endtrans %}</a></li>
+	<li><a href="http://akvo.org/help/akvo-policies-and-terms-2/akvo-privacy-policy/">{% trans %} Privacy {% endtrans %}</a>
+	<li><a href="http://akvo.org/user-contribution-policy/">{% trans %} User contribution policy {% endtrans %}</a></li>
+	<li><a href="http://akvo.org/help/akvo-policies-and-terms-2/akvo-licensing-and-copyrights/">{% trans %} Licensing and copyrights {% endtrans %}</a></li>	
 {% endblock %}
 
 {% block footer_attribution %}
@@ -11,3 +12,21 @@
 
 {% block footer_lang %}
 {% endblock %}
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.opendata.akvo.org"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.akvo.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 98]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.akvo.org/piwik.php?idsite=98" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->

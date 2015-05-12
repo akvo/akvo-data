@@ -9,71 +9,198 @@
 /* HEADER */
 
 header {
-	&.account-masthead {
-		background: $akvoBlack;
-	}
-
-	&.navbar {
-		background: $primary5;
-	}
-	.nav-pills {
-		li {
-			a:hover {
-				background-color: $primary5;
-			}
-			&.active {
-				a {
-					background-color: $primary5;
-				}
-			}
-		}
-	}
+    &.account-masthead {
+        background: $lightGrey;
+        border-bottom: 1px solid #D9E1E4;
+        .container {
+            li {
+                border: none;
+                a {
+                    color: $linkBlue;
+                    @include border-radius(4px);
+                    &:hover {
+                        color: $white;
+                        background-color: $linkBlue;
+                    }
+                }
+            }
+        }
+    }
+    &.navbar {
+        &.masthead {
+            background: $lightGrey;
+            .nav-collapse {
+                padding-top: 1.4em;
+            }
+            .nav-pills {
+                li {
+                    a {
+                        color: $linkBlue;
+                        font-weight: bold;
+                    }
+                    a:hover {
+                        color: $white;
+                        background-color: $linkBlue;
+                    }
+                    &.active {
+                        a {
+                            color: $white;
+                            background-color: $linkBlue;
+                        }
+                    }
+                }
+            }
+            #field-sitewide-search {
+                border-color: #D9E1E4;
+                @include box-shadow(none);
+                &:focus {
+                    @include box-shadow(none);
+                }
+            }
+        }
+        .header-image {
+            max-width: 150px;
+            padding: 0.75em 0;
+        }
+    }
 }
 
 /* GENERAL TYPOGRAPHY AND STYLING*/
 
 body {
-	background: $primary5;
-	font-family: $bodyFont;
+    background: $white;
+    font-family: $bodyFont;
 }
 
 a {
-	color: $akvoLink;
+    color: $linkBlue;
 }
 
-[role=main] {
-	background: $secondary8;
+div {
+    &[role=main] {
+        background: $white;
+    }
 }
 
 footer {
-	&.site-footer {
-		background: $akvoPurple;
-	}
+    &.site-footer {
+        background: $darkPurple;
+        .footer-links {
+            @include responsive(small-max-screens) {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+
+            a {
+                color: $linkBlue;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 /* HOMEPAGE */
 
+h1, h2, h3, h4, h5, h6 {
+    color: $akvoBlack;
+}
+
+.box {
+    background-color: $lightGrey;
+    border: none;
+    @include border-radius(0px);
+    @include box-shadow(none);
+    &.stats {
+        min-height: 180px;
+    }
+    @include responsive(small-max-screens) {
+        margin-top: 20px;
+    }
+}
+
+.module-content {
+    &.box {
+        margin-top: 20px;
+    }
+}
+
 .homepage {
-	.hero {
-		background: $secondary8;
-	}
-	[role=main] {
-		min-height: initial;
-	}
+    .hero {
+        background: $white;
+    }
+    [role=main] {
+        min-height: initial;
+    }
+    .media-overlay {
+        .media-heading {
+            background: $akvoBlack;
+        }
+    }
+    .module {
+        &.module-search {
+            min-height: 180px;
+            background-color: $lightGrey;
+            padding: 0px;
+            .module-content {
+                background-color: $lightGrey;
+                @include border-radius(0px);
+                @include box-shadow(none);
+                .search-input {
+                    .search {
+                        border: none;
+                        @include box-shadow(none);
+                    }
+                }
+            }
+            .tags {
+                background-color: $lightGrey;
+                @include border-radius(0px);
+                @include box-shadow(none);
+                h3 {
+                    padding-top: 0.3em;
+                    color: $darkPurple;
+                }
+                a {
+                    &.tag {
+                        color: $white;
+                        background-color: $darkPurple;
+                        border: none;
+                        padding-top: 0.3em;
+                        padding-bottom: 0.3em;
+                        @include border-radius(0px 100px 100px 0px);
+                        @include box-shadow(none);
+                        &:hover {
+                            background-color: #62448B;
+                        }
+                    }
+                }
+            }
+        }
+        .module-heading {
+            .organsation-heading,
+            .group-heading {
+                background-color: $white;
+            }
+        }
+        .dataset-list {
+            li {
+                .dataset-content {
+                    h3 {
+                        a {
+                            color: $linkBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-	.module-search {
-		.module-content {
-			background: $primary5;
-		}
+/* ORGANISATIONS */
 
-		.tags {
-			background: $akvoBlack;
-		}
-	}
-
-	.media-overlay {
-		.media-heading {
-			background: $akvoBlack;
-		}
-	}
+.container {
+    .wrapper {
+        @include box-shadow(none);
+        @include border-radius(0px);
+    }
 }
