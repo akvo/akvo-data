@@ -176,10 +176,16 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
+        &.group-list {
+            .module-heading {
+                padding: 10px;
+            }
+        }
         .module-heading {
-            .organsation-heading,
+            .organisation-heading,
             .group-heading {
                 background-color: $white;
+                padding: 5px;
             }
         }
         .dataset-list {
