@@ -19,7 +19,7 @@
   ========================================================================== */
 /* HEADER */
 header.account-masthead {
-  background: #f4f3f8;
+  background: white;
   border-bottom: 1px solid #D9E1E4; }
   header.account-masthead .container li {
     border: none; }
@@ -165,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 .homepage .module .module-heading .organisation-heading,
 .homepage .module .module-heading .group-heading {
   background-color: white;
+  min-height: 4.15em;
   padding: 5px; }
 .homepage .module .dataset-list li .dataset-content h3 a {
   color: #419dc4; }
